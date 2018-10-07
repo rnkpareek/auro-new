@@ -10,7 +10,6 @@
     "postinstall":"ng build --aot --target=production",
     "start": "node server.js"
   }
- 
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
