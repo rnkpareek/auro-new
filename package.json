@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build auro",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build --dist/auro"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +28,7 @@
     "node-sass": "^4.9.3",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26",
-   "typescript": "~2.9.2"
+    "typescript": "~2.9.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.8.0",
