@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --output-path dist"
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
@@ -27,7 +27,8 @@
     "mysql": "^2.16.0",
     "node-sass": "^4.9.3",
     "rxjs": "~6.2.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "typescript": "~2.3.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.8.0",
