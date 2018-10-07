@@ -18,10 +18,10 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use('/api', api);
 
 // Send all other requests to the Angular app
-app.use(express.static(path.join(__dirname, 'dist/auro')));
+app.use(express.static(path.join(__dirname, './dist/auro')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/auro/index.html'));
+    res.sendFile(path.join(__dirname, '/dist/auro/index.html'));
 });
 console.log("--->",__dirname)
 //Set Port
